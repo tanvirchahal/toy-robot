@@ -11,6 +11,8 @@ body {
     rgba(41, 32, 67, 1) 50%
   );
   color: #fff;
+  background-image: url(./assets/background.jpeg);
+  background-size: cover;
 }
 
 code {

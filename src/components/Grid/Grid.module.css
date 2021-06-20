@@ -2,15 +2,15 @@
   margin: 10px auto;
   width: 500px;
   height: 500px;
-  background: #473f5c;
   position: relative;
 }
 .cell {
   background-color: #372c56;
-  border: 4px solid #2a2143;
+  border: 4px solid #1a1429;
   color: white;
   text-align: center;
   position: absolute;
+  opacity: 0.9;
 }
 
 /* Row 1 */
