@@ -25,7 +25,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    //gameTimer();
+    gameTimer();
   }, [timer]);
 
   //Check score on
