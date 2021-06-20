@@ -12,14 +12,14 @@ h3.score {
 button {
   border: 0;
   margin: 10px;
-  background-color: #5cbb8f;
+  background-color: #ffb700;
   cursor: pointer;
   padding: 15px 20px;
   font-size: 1.1em;
-  font-weight: 500;
+  font-weight: 800;
   border-radius: 3px;
 }
 
 button:hover {
-  background-color: #4d9c77;
+  background-color: #d79a00;
 }
