@@ -1,0 +1,19 @@
+.controlBtn {
+  padding: 0;
+  height: 50px;
+  width: 50px;
+  border: 0;
+  margin: 10px;
+  background-color: #9a90b7;
+  box-shadow: 2px 3px 6px #000;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.controlBtn:hover {
+  background-color: #837a9e;
+}
+
+.controlBtn:active {
+  box-shadow: 1px 1px 3px #000;
+}
