@@ -40,6 +40,18 @@ function App() {
     }
   }, [robotLocation, targetLocation, rotation]);
 
+  /* Keyboard Functionality */
+  useEffect(() => {
+    if (!gameOver) {
+      //Reference from https://atomizedobjects.com/blog/react/add-event-listener-react-hooks/
+      document.addEventListener("keydown", keyboardControls);
+      // this will clean up the event every time the component is re-rendered
+      return function cleanup() {
+        document.removeEventListener("keydown", keyboardControls);
+      };
+    }
+  }, [robotLocation, targetLocation, rotation]);
+
   const gameTimer = () => {
     if (timer > 0 && !destroyed && !gameOver) {
       setTimeout(() => setTimer(timer - 1), 1000);
@@ -99,6 +111,20 @@ function App() {
     checkDestroyed(tempLocation)
       ? endGame()
       : setRobotLocation([tempLocation[0], tempLocation[1]]);
+  };
+
+  const keyboardControls = (event) => {
+    switch (event.key) {
+      case "ArrowLeft":
+        rotateLeft();
+        break;
+      case "ArrowRight":
+        rotateRight();
+        break;
+      case "ArrowUp":
+        moveAhead();
+        break;
+    }
   };
 
   const checkDestroyed = (tempLocation) => {
