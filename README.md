@@ -5,7 +5,7 @@ URL: https://tanvir-toy-robot.herokuapp.com/
 The application is a simple game consisting of:
 * A square tabletop, 5 units x 5 units o A toy robot
 * A target square
-* A 60 second game timer
+* A 60 and 120 second game timer
 * A leaderboard
 
 The objective of the game is for the robot to reach as many target squares as possible within the 60
